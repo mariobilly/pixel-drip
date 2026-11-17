@@ -9,6 +9,28 @@ Inspired by the melting pixel-sort look in a DIY-camera reel by
 [André Oliveira Cebola](https://www.instagram.com/reel/DdyzoCDh_lK/). Pixel Drip is an independent project and
 shares no code with it.
 
+![Pixel Drip](docs/screenshot.jpg)
+
+<!-- videos:start -->
+## See it in action
+
+<p align="center"><a href="docs/videos/tutorial.mp4"><img src="docs/videos/tutorial.jpg" alt="How it works" width="640"></a><br><b>▶ <a href="docs/videos/tutorial.mp4">How it works</a></b> (1:00, with captions)</p>
+
+**Made with Pixel Drip, from public-domain portraits (The Met) and a free Pexels clip**
+
+<table><tr>
+<td width="33%" align="center"><a href="docs/videos/examples/portrait-blush-melt.mp4"><img src="docs/videos/examples/portrait-blush-melt.gif" alt="Blush Melt + Melt (photo)"></a><br><a href="docs/videos/examples/portrait-blush-melt.mp4">Blush Melt + Melt (photo)</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/portrait-rising-ember.mp4"><img src="docs/videos/examples/portrait-rising-ember.gif" alt="Rising Ember + Drip (photo)"></a><br><a href="docs/videos/examples/portrait-rising-ember.mp4">Rising Ember + Drip (photo)</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/portrait-camera-window.mp4"><img src="docs/videos/examples/portrait-camera-window.gif" alt="Camera Window + Glitch (photo)"></a><br><a href="docs/videos/examples/portrait-camera-window.mp4">Camera Window + Glitch (photo)</a></td>
+</tr><tr>
+<td width="33%" align="center"><a href="docs/videos/examples/dancer-blush-melt.mp4"><img src="docs/videos/examples/dancer-blush-melt.gif" alt="Blush Melt (video)"></a><br><a href="docs/videos/examples/dancer-blush-melt.mp4">Blush Melt (video)</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/dancer-selaron-smear.mp4"><img src="docs/videos/examples/dancer-selaron-smear.gif" alt="Selarón Smear (video)"></a><br><a href="docs/videos/examples/dancer-selaron-smear.mp4">Selarón Smear (video)</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/dancer-lilac-pour.mp4"><img src="docs/videos/examples/dancer-lilac-pour.gif" alt="Lilac Haze + Pour (video)"></a><br><a href="docs/videos/examples/dancer-lilac-pour.mp4">Lilac Haze + Pour (video)</a></td>
+</tr></table>
+
+Click any picture to play the video. Example sources: *Portrait of a Young Man* by Biagio d'Antonio, [The Met](https://www.metmuseum.org/art/collection/search/435664) (CC0); *Portrait of a Woman* by the Master of the Castello Nativity, [The Met](https://www.metmuseum.org/art/collection/search/437000) (CC0); *Portrait of a Young Man* by Cosmè Tura, [The Met](https://www.metmuseum.org/art/collection/search/437851) (CC0); "A Woman Dancing Gracefully" by [Pavel Danilyuk](https://www.pexels.com/video/a-woman-dancing-gracefully-6939968/) ([Pexels licence](https://www.pexels.com/license/)).
+<!-- videos:end -->
+
 ## Install
 
 You need:
@@ -107,6 +129,7 @@ The server tests use FastAPI's TestClient, which needs httpx (`python -m pip ins
 ## Credits
 - Inspiration: the melting pixel-sort look in a DIY-camera reel by
   [André Oliveira Cebola](https://www.instagram.com/reel/DdyzoCDh_lK/).
+- The examples and the tutorial video use public-domain portraits from [The Met Open Access](https://www.metmuseum.org/about-the-met/policies-and-documents/open-access) programme (CC0): [Biagio d'Antonio](https://www.metmuseum.org/art/collection/search/435664), [the Master of the Castello Nativity](https://www.metmuseum.org/art/collection/search/437000), [Cosmè Tura](https://www.metmuseum.org/art/collection/search/437851); and "A Woman Dancing Gracefully" by [Pavel Danilyuk](https://www.pexels.com/video/a-woman-dancing-gracefully-6939968/) ([Pexels licence](https://www.pexels.com/license/)).
 
 ## Licence
 
