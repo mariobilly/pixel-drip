@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+.venv/
+.pytest_cache/
+*.log
+*.part
+*.part.*
+tests/_out/

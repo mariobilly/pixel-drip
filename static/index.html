@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Drip</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark" aria-hidden="true"></span>Pixel Drip</div>
+  <button id="open" title="Open a photo or video (Ctrl+O)">Open…</button>
+  <div id="fileinfo" class="fileinfo">No file open</div>
+  <div class="spacer"></div>
+  <button id="random" title="Random look (R)">Randomize</button>
+  <label class="sizepick" title="Export size">
+    <select id="exportSize">
+      <option value="0">Full size</option>
+      <option value="1920">Max 1920 px</option>
+      <option value="1280">Max 1280 px</option>
+    </select>
+  </label>
+  <button id="export" class="primary" title="Export (Ctrl+E)" disabled>Export</button>
+</header>
+
+<main>
+  <section class="stage">
+    <div class="view" id="view">
+      <img id="shot" alt="" draggable="false">
+      <img id="orig" alt="" draggable="false">
+      <div id="winbox" class="winbox" hidden><div class="grip" id="grip"></div></div>
+      <div class="badge" id="badge" hidden>Original</div>
+      <div class="busy" id="busy" hidden></div>
+      <div class="empty" id="empty">
+        <div class="drop-art" aria-hidden="true"></div>
+        <h1>Drop a photo or video here</h1>
+        <p>or <button class="link" id="open2">open a file</button>. You can also drop a file on the desktop shortcut.</p>
+      </div>
+    </div>
+    <div class="scrub" id="scrub" hidden>
+      <input type="range" id="frame" min="0" max="0" value="0" step="1" aria-label="Frame">
+      <span id="time" class="mono">0:00.00</span>
+    </div>
+    <div class="scrub" id="playbar" hidden>
+      <button id="play" class="playbtn" title="Play the motion (P)" aria-label="Play">&#9654;</button>
+      <input type="range" id="tpos" min="0" max="1000" value="0" step="1" aria-label="Position in the loop">
+      <span id="tlabel" class="mono">0.0 / 6 s</span>
+    </div>
+    <div class="hint">Hold <kbd>Space</kbd> to see the original · <kbd>P</kbd> play motion · <kbd>R</kbd> randomize · drag the window box to move it, its corner to resize · <span id="ms" class="mono"></span></div>
+  </section>
+
+  <aside class="side" id="side">
+    <div class="presets" id="presets"></div>
+    <div id="controls"></div>
+  </aside>
+</main>
+
+<div class="modal" id="progress" hidden>
+  <div class="card">
+    <div class="ptitle" id="ptitle">Exporting…</div>
+    <div class="bar"><div id="pbar"></div></div>
+    <div class="pinfo mono" id="pinfo"></div>
+    <div class="pact"><button id="pcancel">Cancel</button></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
